@@ -39,11 +39,11 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             children: [
               Input(inputUser: inputUser),
-              Container(height: 100, width: 100),
+              const SizedBox(height: 100, width: 100),
               const Result(),
               Result1(kelvin: kelvin, reamur: reamur),
-              Container(height: 100, width: 100),
-              Container(
+              const SizedBox(height: 100, width: 100),
+              SizedBox(
                 width: double.infinity,
                 height: 50,
                 child: TextButton(
@@ -95,6 +95,7 @@ class Result1 extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        Text('suhu dalam kelvin'),
         Text('$kelvin', style: const TextStyle(fontSize: 30)),
         const SizedBox(
           width: 300,
